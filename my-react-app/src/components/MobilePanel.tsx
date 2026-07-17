@@ -1,0 +1,49 @@
+import { CirclePlus } from 'lucide-react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import NavigationLinkInventory from './LinkNavigation/NavigationLink.js';
+import NavigationLinkHome from './LinkNavigation/NavigationLinkHome.js';
+import { useSelector } from 'react-redux';
+import type { RootState } from '../redux/store.js';
+export default function MobilePanel() {
+  const { user, isAuth } = useSelector((state: RootState) => state.auth);
+  const navigate = useNavigate();
+
+  return (
+    <div
+      className='fixed
+       shadow-[0_12px_12px_0_rgba(27,26,25,0.7),inset_0_3px_6.1px_0_rgba(68,60,54,0.5)]
+      h-[60px] m p-4 bottom-[12px] px-4 right-[12px] rounded-[24px] left-[12px] min-[900px]:hidden z-50 flex items-center justify-between  bg-black'
+      style={{
+        background:
+          'linear-gradient(180deg, rgba(77,64,39,0.2), rgba(78,66,40,0.7)), #312923',
+      }}
+    >
+      <div className='w-full flex  gap-3'>
+        {' '}
+        <NavigationLinkHome></NavigationLinkHome>
+        <NavigationLinkInventory></NavigationLinkInventory>
+      </div>
+      <div className='relative flex items-center gap-3'>
+        {isAuth && user && (
+          <div className='  h-[50px] w-[50px] shrink-0 rounded-[50px] cursor-pointer overflow-hidden '>
+            <img
+              onClick={() => navigate(`/profile/${user.id}`)}
+              className=' w-full h-full object-cover'
+              src='https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg'
+            />
+          </div>
+        )}
+        <div className='flex items-center h-[38px] px-3 gap-2 rounded-xl cursor-pointer font-geo  bg-[linear-gradient(307deg,#d26928_3.2%,#ffd014_99.71%)]'>
+          <div
+            className='text-[16px] font-geo font-bold flex  items-center'
+            style={{ textShadow: '0 2px 1px rgba(137, 65, 14, .34)' }}
+          >
+            <span>0</span>
+            <span>₽</span>
+          </div>
+          <CirclePlus className='w-5 h-5 ' />
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,24 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Сборки (React/Vite)
+dist/
+dist-ssr/
+
+# Окружение (секреты)
+.env
+.env.*
+!.env.example
+
+# Идеи и редакторы
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
