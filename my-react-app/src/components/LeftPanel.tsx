@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import type { AppDispatch, RootState } from '../redux/store.js';
-import { getAllSessionFetch } from '../redux/ProfileSlice.js';
+import { getAllSessionFetch } from '../redux/ProfileSlice.ts';
 
 export default function LeftPanel() {
   const DataWinIndex = useSelector(
