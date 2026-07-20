@@ -7,15 +7,13 @@ services:
       - app-network
 
   nginx:
-    image: nginx:alpine
+    build: ./my-react-app
     container_name: my-nginx
     restart: unless-stopped
     ports:
       - '80:80'
       - '443:443'
     volumes:
-      - ./my-react-app/dist:/usr/share/nginx/html:ro
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - ./certbot/conf:/etc/letsencrypt:ro
       - ./certbot/www:/var/www/certbot:ro
     networks:
