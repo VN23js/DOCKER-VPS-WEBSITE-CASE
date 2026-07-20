@@ -5,7 +5,7 @@ import { Button, Input, Typography } from '@mui/joy';
 import { Link, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { clearStatus, registerUsers } from '../redux/authSlice.js';
+import { clearStatus, registerUsers } from '../redux/authSlice.ts';
 import { toast } from 'react-toastify';
 
 import { useForm } from 'react-hook-form';
