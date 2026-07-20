@@ -9,9 +9,7 @@ export default function LeftPanel() {
     (state: RootState) => state.caseTestTs.DataWinIndex,
     shallowEqual
   );
-
   const navigate = useNavigate();
-
   const dispatch = useDispatch<AppDispatch>();
   useEffect(() => {
     dispatch(getAllSessionFetch());
