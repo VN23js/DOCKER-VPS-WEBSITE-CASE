@@ -1,4 +1,4 @@
-import NavigationFooter from './NavigationFooter.js';
+import NavigationFooter from './NavigationFooter';
 export default function FooterPetuh() {
   return (
     <div className='w-full max-w-[1500px] mx-auto min-[1500px]:pl-[200px] '>

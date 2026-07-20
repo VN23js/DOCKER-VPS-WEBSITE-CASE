@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import Navbar from './Navbar.js';
 import { Outlet } from 'react-router-dom';
-import MobilePanel from './MobilePanel.js';
+import MobilePanel from './MobilePanel';
 import LeftPanel from './LeftPanel';
 import { useDispatch, useSelector } from 'react-redux';
-import { addNewItemLenta } from '../redux/ProfileSlice.js';
+import { addNewItemLenta } from '../redux/ProfileSlice';
 import FooterPetuh from './Footer';
 import OnlineUsers from './OnlineUsers';
 import { initSocketListeners } from '../hooks/socketListeners';

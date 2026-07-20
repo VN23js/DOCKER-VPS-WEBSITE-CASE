@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import type { RootState } from '../redux/store.js';
+import type { RootState } from '../redux/store';
 
 export default function UpLenta() {
   const DataWinIndex = useSelector(

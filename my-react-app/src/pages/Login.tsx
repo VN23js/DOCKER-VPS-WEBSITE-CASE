@@ -7,8 +7,8 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
-import type { AppDispatch, RootState } from '../redux/store.js';
-import { clearStatus, loginUser } from '../redux/authSlice.ts';
+import type { AppDispatch, RootState } from '../redux/store';
+import { clearStatus, loginUser } from '../redux/authSlice';
 
 type LoginForm = {
   password: string;

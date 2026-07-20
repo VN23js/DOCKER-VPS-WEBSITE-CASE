@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Select from 'react-select';
-import { selectClassNames } from './components/ui/shared/SelectStyle.js';
+import { selectClassNames } from './components/ui/shared/SelectStyle';
 import { useForm, Controller } from 'react-hook-form';
-import InputField from './components/Admin/InputField.js';
+import InputField from './components/Admin/InputField';
 import { useDispatch } from 'react-redux';
-import type { AppDispatch } from '../../redux/store.js';
-import { postNewSkin } from '../../redux/AdminSlice.js';
+import type { AppDispatch } from '../../redux/store';
+import { postNewSkin } from '../../redux/AdminSlice';
 type Rarity = {
   name: string;
   color: string;

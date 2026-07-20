@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import api from '../api/axiosTs.js';
+import api from '../api/axiosTs';
 import type {
   AuthState,
   GetMe,

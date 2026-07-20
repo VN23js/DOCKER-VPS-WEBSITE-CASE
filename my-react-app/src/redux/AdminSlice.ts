@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import apiTs from '../api/axiosTs.js';
-import type { Status, WeaponForm } from './TypeSlice/sliceTypeAdmin.js';
-import type { TypeNewSkin } from './TypeSlice/sliceTypeAdmin.js';
+import type { Status, WeaponForm } from './TypeSlice/sliceTypeAdmin';
+import type { TypeNewSkin } from './TypeSlice/sliceTypeAdmin';
 import axios from 'axios';
 
 export const postNewSkin = createAsyncThunk<

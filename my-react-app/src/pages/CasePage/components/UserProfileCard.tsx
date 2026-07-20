@@ -1,8 +1,8 @@
 import { GiPistolGun } from 'react-icons/gi';
 import { useSelector } from 'react-redux';
 
-import type { RootState } from '../../../redux/store.js';
-import HasmoreCase from './ui/shared/Hasmore.js';
+import type { RootState } from '../../../redux/store';
+import HasmoreCase from './ui/shared/Hasmore';
 
 export default function UsersProfileCard() {
   const profileUser = useSelector(

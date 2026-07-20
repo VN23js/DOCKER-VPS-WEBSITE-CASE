@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import type { RootState } from '../../../redux/store.js';
+import type { RootState } from '../../../redux/store';
 import { useSelector } from 'react-redux';
-import EmptyInventory from './profile/EmptyInventory.js';
-import ItemsInventory from './profile/ItemsInventory.js';
+import EmptyInventory from './profile/EmptyInventory';
+import ItemsInventory from './profile/ItemsInventory';
 
 export default function UsersProfileInventory() {
   const profileUser = useSelector(

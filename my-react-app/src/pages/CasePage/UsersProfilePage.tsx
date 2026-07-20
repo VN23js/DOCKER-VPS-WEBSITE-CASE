@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import UsersProfileCard from './components/UserProfileCard.js';
+import UsersProfileCard from './components/UserProfileCard';
 import { useDispatch, useSelector } from 'react-redux';
-import type { AppDispatch, RootState } from '../../redux/store.js';
+import type { AppDispatch, RootState } from '../../redux/store';
 import { useParams } from 'react-router-dom';
-import { ClearUserProfile, getProfileUser } from '../../redux/ProfileSlice.js';
-import LoadingCard from './components/ui/shared/Loading.js';
-import Error from './components/ui/shared/Error.js';
-import UsersProfileInventory from './components/UserProfileInvenory.js';
-import HasmoreCase from './components/ui/shared/Hasmore.js';
+import { ClearUserProfile, getProfileUser } from '../../redux/ProfileSlice';
+import LoadingCard from './components/ui/shared/Loading';
+import Error from './components/ui/shared/Error';
+import UsersProfileInventory from './components/UserProfileInvenory';
+import HasmoreCase from './components/ui/shared/Hasmore';
 
 export default function UsersProfilePage() {
   const dispatch = useDispatch<AppDispatch>();

@@ -1,14 +1,14 @@
-import ButtonCase from '../pages/CasePage/components/ui/shared/Button.js';
+import ButtonCase from '../pages/CasePage/components/ui/shared/Button';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { logout } from '../redux/authSlice.js';
 import { useDispatch, useSelector } from 'react-redux';
 import apiTs from '../api/axiosTs.js';
 import { toast } from 'react-toastify';
 import { CirclePlus, LogOutIcon, Trophy, UserKey } from 'lucide-react';
-import NavigationLinkHomeDesktop from './LinkNavigation/NavigationLinkHomeDesktop.js';
-import NavigationLinkInventoryDesktop from './LinkNavigation/NavigationLinkInventoryDesktop.js';
+import NavigationLinkHomeDesktop from './LinkNavigation/NavigationLinkHomeDesktop';
+import NavigationLinkInventoryDesktop from './LinkNavigation/NavigationLinkInventoryDesktop';
 import { useEffect } from 'react';
-import type { AppDispatch, RootState } from '../redux/store.js';
+import type { AppDispatch, RootState } from '../redux/store';
 
 export default function Navbar() {
   const user = useSelector((state: RootState) => state.auth.user);

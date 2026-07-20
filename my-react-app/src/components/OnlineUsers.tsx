@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { initSocketListeners } from '../hooks/socketListeners.js';
-import type { AppDispatch, RootState } from '../redux/store.js';
+import { initSocketListeners } from '../hooks/socketListeners';
+import type { AppDispatch, RootState } from '../redux/store';
 import { socketTs } from '../api/socketTs.js';
 import { useDispatch, useSelector } from 'react-redux';
 export default function OnlineUsers() {

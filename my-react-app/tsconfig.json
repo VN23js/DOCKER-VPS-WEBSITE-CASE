@@ -8,8 +8,14 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
+    /* Настройки модулей для Vite */
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+
+    /* Разрешает импорты без .js и .ts */
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -40,6 +46,7 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
+
     "skipLibCheck": true
   }
 }

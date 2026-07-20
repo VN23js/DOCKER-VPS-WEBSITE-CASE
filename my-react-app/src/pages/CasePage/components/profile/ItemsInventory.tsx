@@ -1,4 +1,4 @@
-import type { ProfileUser } from '../../../../redux/TypeSlice/sliceTypeCase.js';
+import type { ProfileUser } from '../../../../redux/TypeSlice/sliceTypeCase';
 
 type Props = {
   profileUser: ProfileUser | null;

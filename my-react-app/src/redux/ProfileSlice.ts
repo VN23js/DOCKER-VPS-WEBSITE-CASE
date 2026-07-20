@@ -2,8 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import apiTs from '../api/axiosTs.js';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import axios, { AxiosError } from 'axios';
-import type { MoreInventory, ProfileUser } from './TypeSlice/sliceTypeCase.js';
-import type { DataWinIndex } from './TypeSlice/sliceTypeCase.js';
+import type { MoreInventory, ProfileUser } from './TypeSlice/sliceTypeCase';
+import type { DataWinIndex } from './TypeSlice/sliceTypeCase';
 type Status = 'idle' | 'loading' | 'successed' | 'error';
 type GlobalState = {
   usersOnline: number | null;
