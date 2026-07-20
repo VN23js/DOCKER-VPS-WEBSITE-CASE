@@ -1,4 +1,4 @@
 import { io } from 'socket.io-client';
-export const socketTs = io('http://localhost:3000', {
+export const socketTs = io('/', {
   withCredentials: true,
 });
