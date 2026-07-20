@@ -1,5 +1,5 @@
 # ЭТАП 1: Сборка проекта
-FROM node:20.19 AS build
+FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
