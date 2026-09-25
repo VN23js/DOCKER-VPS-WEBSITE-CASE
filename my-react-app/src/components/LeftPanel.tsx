@@ -16,7 +16,7 @@ export default function LeftPanel() {
   }, []);
   return (
     <div>
-      {DataWinIndex.map((item, i) => (
+      {DataWinIndex?.map((item, i) => (
         <div
           key={`${item._id}-${i}`}
           className='items-case !max-w-[154px] cursor-pointer group !h-[165px] mb-5 flex-col flex justify-center'

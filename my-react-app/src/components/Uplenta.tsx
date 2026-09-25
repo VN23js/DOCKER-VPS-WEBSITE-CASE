@@ -12,7 +12,7 @@ export default function UpLenta() {
 
   return (
     <div className=' shadow-cust rounded-3xl  mx-auto hidden max-[1500px]:flex z-999 sticky left-0 right-0 gap-1 overflow-hidden p-2 h-[130px]'>
-      {DataWinIndex.map((item, i) => (
+      {DataWinIndex?.map((item, i) => (
         <div
           key={`${item._id}-${i}`}
           className='cursor-pointer group rounded-2xl h-full flex flex-col items-center justify-end w-[100px] shrink-0'

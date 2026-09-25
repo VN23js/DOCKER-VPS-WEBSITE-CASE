@@ -15,6 +15,7 @@ import FormsTsx from './TS/Forms.tsx';
 import { lazy, Suspense } from 'react';
 import Error from './pages/CasePage/components/ui/shared/Error';
 import LoadingCard from './pages/CasePage/components/ui/shared/Loading.tsx';
+import KfcPage from './pages/kfc/KfcPage.tsx'
 const UsersProfilePage = lazy(
   () => import('./pages/CasePage/UsersProfilePage')
 );
@@ -58,6 +59,8 @@ export default function App() {
         </Route>
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/rostics.ru' element={<KfcPage/>} />
+       
       </Routes>
       <ToastContainer
         position='bottom-right'
